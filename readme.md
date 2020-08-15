@@ -54,5 +54,17 @@ $SHOT_SHA variavel que pegar o hash do commit para versionar a imagem
 #    args: ['push', 'gcr.io/fullcycle-examples/live-ci-cd:$SHOT_SHA']
 
 
+# Configurações no GitHub
+Acessa as configurações do repositorio --> barnches --> add rules
+branch name: master
+Habilita: Require status checks to pass before merging
+
+# Editar o gatilho do google cloud
+Fonte: master
+Habilita: Inverter Regex (O trigger deve rodar para qualquer push no github diferente do master)
 
 
+Enabling branch restrictions
+
+
+# https://github.com/codeedu/live-ci-cd/blob/master/cloudbuild.dev.yaml
