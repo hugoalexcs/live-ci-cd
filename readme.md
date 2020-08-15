@@ -68,3 +68,21 @@ Enabling branch restrictions
 
 
 # https://github.com/codeedu/live-ci-cd/blob/master/cloudbuild.dev.yaml
+
+# Deploy master
+Google cloud run  --> serviço gerenciado do google para trabalhar com container
+
+
+# Kubernetes Engine --> clusters
+Okestrador de containers
+
+# COnectar ao clusters direto
+gcloud container clusters get-credentials fullcycle --zone us-central1-c --project fullcycle-examples
+ # Install KUBERNETES
+ https://kubernetes.io/docs/tasks/tools/install-kubectl/
+
+kubectl get nodes
+kubectl apply -f k8s.yaml
+
+Acessar o google cloud e selecionar carga de trabalho
+Acessar depois serviços e verifica se estar tudo ok, verifica o IP: este aponta para o loadbalance
