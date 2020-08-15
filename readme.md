@@ -64,3 +64,7 @@ Fonte: master
 Habilita: Inverter Regex (O trigger deve rodar para qualquer push no github diferente do master)
 
 
+Enabling branch restrictions
+
+
+# https://github.com/codeedu/live-ci-cd/blob/master/cloudbuild.dev.yaml
