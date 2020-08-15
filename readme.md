@@ -2,10 +2,27 @@
 docker build -t gcr.io/fullcycle-examples/live-ci-cd:latest .
 
 # Run projeto no container
-docker run -p 8080:8080 gcr.io/fullcycle-examples/lime-ci-cd:latest
+docker run -p 8080:8080 gcr.io/fullcycle-examples/live-ci-cd:latest
+
+# ativar Google Container Registry API
+https://cloud.google.com/iam/docs/creating-managing-service-account-keys#creating_service_account_keys
+https://cloud.google.com/container-registry/docs/advanced-authentication#gcloud-helper
+https://cloud.google.com/sdk/docs?authuser=1
+https://cloud.google.com/container-registry/
+https://cloud.google.com/container-registry/docs/advanced-authentication#json_key_file
+https://cloud.google.com/container-registry/docs/pushing-and-pulling
+gcloud auth configure-docker
+ https://gcr.io
+ docker login gcr.io 
+# Ativar o Google Storage
+
+https://cloud.google.com/sdk/docs?authuser=1
+ gcloud config set project PROJECT_ID
+ gcloud auth activate-service-account test-service-account@google.com --key-file=/path/key.json --project=testproject
+ gcloud auth activate-service-account --key-file key-file.json
 
 # Subir a imagem para o container register
- docker push gcr.io/fullcycle-exemples/live-ci-cd:latest
+ docker push gcr.io/fullcycle-examples/live-ci-cd:latest
 
  # Criar um repositorio no github
  live-ci-cd
