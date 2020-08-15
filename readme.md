@@ -47,5 +47,12 @@ Ciar arquivo chamado cloudbuild.yaml
 $SHOT_SHA variavel que pegar o hash do commit para versionar a imagem
 
 
+# - name: 'docker' 
+#    args: ['push', 'gcr.io/fullcycle-examples/live-ci-cd:latest']
+
+# - name: 'docker'
+#    args: ['push', 'gcr.io/fullcycle-examples/live-ci-cd:$SHOT_SHA']
+
+
 
 
