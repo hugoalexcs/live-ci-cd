@@ -86,3 +86,5 @@ kubectl apply -f k8s.yaml
 
 Acessar o google cloud e selecionar carga de trabalho
 Acessar depois serviços e verifica se estar tudo ok, verifica o IP: este aponta para o loadbalance
+
+HABILITAR CLOUD RUN e KUBERNETES ENGINE
