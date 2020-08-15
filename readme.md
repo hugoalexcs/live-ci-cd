@@ -1,3 +1,6 @@
+# Configuração do cloudbuild.yaml
+https://cloud.google.com/cloud-build/docs/build-config
+
  # Envia projeto para um container no google plataform
 docker build -t gcr.io/fullcycle-examples/live-ci-cd:latest .
 
